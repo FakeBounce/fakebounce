@@ -1,20 +1,12 @@
-import { Button, Flex, Image, useColorMode } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Flex, Image } from '@chakra-ui/react';
 
 import Greeting from './Greeting';
 import HomeContentBoxes from './HomeContentBoxes';
 import React from 'react';
 
 const Home: React.FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isLightMode = colorMode === 'light';
-
   return (
     <Flex flexDirection="column" alignItems="center" minH="100vh">
-      <Button onClick={toggleColorMode} position="fixed" top="1rem" right="1rem" zIndex="9999">
-        {isLightMode ? <SunIcon /> : <MoonIcon />}
-      </Button>
-
       <Flex
         maxW="800px"
         w="full"

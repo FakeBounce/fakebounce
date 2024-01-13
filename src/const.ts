@@ -16,5 +16,5 @@ export const contentWidth = (isExpanded: boolean) => {
     if (isExpanded) {
       return '85vw';
     }
-    return '90vw';
+    return '95vw';
   };

@@ -1,4 +1,5 @@
-import { Divider, Flex } from '@chakra-ui/react';
+import { Button, Divider, Flex, useColorMode } from '@chakra-ui/react';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import React, { useState } from 'react';
 import { contentWidth, sidebarWidth, useIsMobile } from '../../../const';
 
@@ -8,6 +9,8 @@ import { Outlet } from 'react-router-dom';
 const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState<boolean>(!isMobile);
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isLightMode = colorMode === 'light';
 
   const isExpanded = isMobile ? false : expanded;
 
@@ -34,6 +37,9 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
         justifyContent="center"
         transition="all 0.3s ease"
       >
+        <Button onClick={toggleColorMode} position="absolute" top="1rem" right="1rem">
+          {isLightMode ? <SunIcon /> : <MoonIcon />}
+        </Button>
         <Outlet />
       </Flex>
     </Flex>
