@@ -7,7 +7,6 @@ import { useIsMobile } from '../../../const';
 
 const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
   const isMobile = useIsMobile();
-  console.log('isMobile', isMobile);
   const [expanded, setExpanded] = useState<boolean>(!isMobile);
 
   if (!withSidebar) {
