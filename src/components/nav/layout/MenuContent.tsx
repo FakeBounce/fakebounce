@@ -22,7 +22,14 @@ const MenuContent: React.FC<MenuContentProps> = ({ expanded, setExpanded }) => {
   };
 
   return (
-    <Flex w={sidebarWidth(expanded)} flexDirection="column" transition="all 0.3s ease">
+    <Flex
+      w={sidebarWidth(expanded)}
+      flexDirection="column"
+      transition="all 0.3s ease"
+      position="sticky"
+      top="0"
+      zIndex="sticky" // Ensure it stays above other sticky elements
+    >
       <Box p={4} borderBottom={`1px solid ${dividerColor}`}>
         {/* Sidebar header */}
         <Flex mb={4} onClick={handleHeaderClick} cursor={!isMobile ? 'pointer' : 'default'}>

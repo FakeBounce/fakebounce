@@ -25,12 +25,13 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
       >
         <MenuContent expanded={isExpanded} setExpanded={setExpanded} />
       </Flex>
-      <Divider orientation="vertical" borderRight="1px solid gray" />
+      <Flex position="relative">
+        <Divider orientation="vertical" borderRight="1px solid gray" position="fixed" />
+      </Flex>
       <Flex
         w={contentWidth(isExpanded)}
         gap="2rem"
         justifyContent="center"
-        alignItems="center"
         transition="all 0.3s ease"
       >
         <Outlet />

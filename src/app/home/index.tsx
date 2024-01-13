@@ -11,12 +11,20 @@ const Home: React.FC = () => {
   const isLightMode = colorMode === 'light';
 
   return (
-    <Flex justifyContent="center" alignItems="center" h="full" pt={['15rem', '0']}>
-      <Button onClick={toggleColorMode} position="absolute" top="1rem" right="1rem">
+    <Flex flexDirection="column" alignItems="center" minH="100vh">
+      <Button onClick={toggleColorMode} position="fixed" top="1rem" right="1rem" zIndex="9999">
         {isLightMode ? <SunIcon /> : <MoonIcon />}
       </Button>
 
-      <Flex maxW="800px" w="full" p="4" flexDirection="column" alignItems="center">
+      <Flex
+        maxW="800px"
+        w="full"
+        p="4"
+        flexDirection="column"
+        alignItems="center"
+        mx={['auto', 'auto', '0']} // Center horizontally only for desktop
+        my={['auto', 'auto', 'auto']} // Center vertically only for desktop
+      >
         <Image
           src={'/dev.png'}
           alt="Bearded Developer coding"
@@ -38,7 +46,7 @@ const Home: React.FC = () => {
               </Text>
             </Text>
 
-            {/* Role Description */}
+            {/* Description */}
             <Text fontSize="xl" mb="4" color={isLightMode ? 'gray.600' : 'gray.300'}>
               Je suis un ingénieur du web, spécialisé en Front-end dans des applications ReactJs /
               NodeJs.
