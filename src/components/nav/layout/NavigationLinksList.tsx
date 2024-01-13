@@ -8,10 +8,15 @@ const NavigationLinksList: React.FC<{
   expanded: boolean;
 }> = ({ expanded }) => {
   return (
-    <Box>
-      <NavigationLink expanded={expanded} text="Home" icon={<FaHome />} to="/" />
-      <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt />} to="/cv" />
-      <NavigationLink expanded={expanded} text="Contact" icon={<FaEnvelope />} to="/contact" />
+    <Box minW="2.5rem">
+      <NavigationLink expanded={expanded} text="Home" icon={<FaHome size={20} />} to="/" />
+      <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt size={20} />} to="/cv" />
+      <NavigationLink
+        expanded={expanded}
+        text="Contact"
+        icon={<FaEnvelope size={20} />}
+        to="/contact"
+      />
     </Box>
   );
 };

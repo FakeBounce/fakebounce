@@ -3,6 +3,7 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
 import { ChakraProvider } from '@chakra-ui/react';
+import ErrorPage from './components/ErrorPage';
 import { Home } from './pages';
 import Layout from './components/nav/layout';
 import React from 'react';
@@ -14,6 +15,8 @@ const App: React.FC = () => {
       <Routes>
         <Route element={<Layout withSidebar />}>
           <Route path="/" element={<Home />} />
+
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </ChakraProvider>
