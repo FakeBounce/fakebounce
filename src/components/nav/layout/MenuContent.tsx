@@ -1,9 +1,9 @@
 import { Box, Divider, Flex, Text, useColorModeValue } from '@chakra-ui/react';
+import { sidebarWidth, useIsMobile } from '../../../const'; // Adjust the path accordingly
 
 import NavigationLinksList from './NavigationLinksList';
 import React from 'react';
 import { UpDownIcon } from '@chakra-ui/icons';
-import { useIsMobile } from '../../../const'; // Adjust the path accordingly
 
 interface MenuContentProps {
   expanded: boolean;
@@ -22,7 +22,7 @@ const MenuContent: React.FC<MenuContentProps> = ({ expanded, setExpanded }) => {
   };
 
   return (
-    <Flex w={expanded ? '20vw' : '5vw'} flexDirection="column" transition="all 0.3s ease">
+    <Flex w={sidebarWidth(expanded)} flexDirection="column" transition="all 0.3s ease">
       <Box p={4} borderBottom={`1px solid ${dividerColor}`}>
         {/* Sidebar header */}
         <Flex mb={4} onClick={handleHeaderClick} cursor={!isMobile ? 'pointer' : 'default'}>

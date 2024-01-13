@@ -8,13 +8,13 @@ const NavigationLinksList: React.FC<{
   expanded: boolean;
 }> = ({ expanded }) => {
   return (
-    <Box minW="2.5rem">
-      <NavigationLink expanded={expanded} text="Home" icon={<FaHome size={20} />} to="/" />
-      <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt size={20} />} to="/cv" />
+    <Box minW="2.5rem" gap="1rem">
+      <NavigationLink expanded={expanded} text="Accueil" icon={<FaHome size={25} />} to="/" />
+      <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt size={25} />} to="/cv" />
       <NavigationLink
         expanded={expanded}
         text="Contact"
-        icon={<FaEnvelope size={20} />}
+        icon={<FaEnvelope size={25} />}
         to="/contact"
       />
     </Box>
