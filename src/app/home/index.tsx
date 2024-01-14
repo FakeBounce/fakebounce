@@ -6,7 +6,7 @@ import React from 'react';
 
 const Home: React.FC = () => {
   return (
-    <Flex flexDirection="column" alignItems="center" minH="100vh">
+    <Flex flexDirection="column" alignItems="center" minH="90vh">
       <Flex
         maxW="800px"
         w="full"

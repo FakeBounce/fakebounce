@@ -11,12 +11,6 @@ const NavigationLinksList: React.FC<{
     <Box minW="2.5rem" gap="1rem">
       <NavigationLink expanded={expanded} text="Accueil" icon={<FaHome size={25} />} to="/" />
       <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt size={25} />} to="/cv" />
-      <NavigationLink
-        expanded={expanded}
-        text="Contact"
-        icon={<FaEnvelope size={25} />}
-        to="/contact"
-      />
     </Box>
   );
 };

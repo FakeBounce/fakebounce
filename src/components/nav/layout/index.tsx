@@ -1,18 +1,16 @@
-import { ArrowBackIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
-import { Button, Divider, Flex, useColorMode } from '@chakra-ui/react';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
-import { contentWidth, sidebarWidth, useIsMobile } from '../../../const';
+import { contentWidth, useIsMobile } from '../../../const';
 
-import MenuContent from './MenuContent';
+import Footer from './Footer';
+import NavigationArrow from './NavigationArrow';
+import { Outlet } from 'react-router-dom';
+import Sidebar from './Sidebar';
+import ThemeChanger from './ThemeChanger';
 
 const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState<boolean>(!isMobile);
-  const { colorMode, toggleColorMode } = useColorMode();
-  const isLightMode = colorMode === 'light';
-  const navigate = useNavigate();
-  const location = useLocation();
 
   const isExpanded = isMobile ? false : expanded;
 
@@ -20,43 +18,27 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
     return <Flex w="100vw" h="100vh"></Flex>;
   }
 
-  const shouldShowBackButton = location.pathname !== '/';
-
   return (
-    <Flex width="100vw" height="100vh">
-      <Flex
-        w={sidebarWidth(isExpanded)}
-        minW="60px"
-        flexDirection="column"
-        transition="all 0.3s ease"
-      >
-        <MenuContent expanded={isExpanded} setExpanded={setExpanded} />
+    <Flex flexDirection="column" height="100vh">
+      <Flex width="100vw">
+        <Sidebar isExpanded={isExpanded} setExpanded={setExpanded} />
+        <Flex
+          flexDirection="column"
+          w={contentWidth(isExpanded)}
+          gap="2rem"
+          justifyContent="center"
+          alignItems="center"
+          position="relative"
+          transition="all 0.3s ease"
+          flex="1"
+        >
+          {!isMobile && <ThemeChanger />}
+          {!isMobile && <NavigationArrow isExpanded={isExpanded} />}
+          <Outlet />
+        </Flex>
       </Flex>
-      <Flex position="relative">
-        <Divider orientation="vertical" borderRight="1px solid gray" position="fixed" />
-      </Flex>
-      <Flex
-        w={contentWidth(isExpanded)}
-        gap="2rem"
-        justifyContent="center"
-        position="relative"
-        transition="all 0.3s ease"
-      >
-        <Button onClick={toggleColorMode} position="fixed" top="1rem" right="3rem">
-          {isLightMode ? <SunIcon /> : <MoonIcon />}
-        </Button>
-        {shouldShowBackButton && (
-          <Button
-            onClick={() => navigate('/')}
-            position="absolute"
-            top="1rem"
-            left={isExpanded ? 'calc(5rem + 2rem)' : '2rem'}
-          >
-            <ArrowBackIcon />
-          </Button>
-        )}
-        <Outlet />
-      </Flex>
+      {/* Sticky Footer */}
+      <Footer />
     </Flex>
   );
 };

@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Image, Text, useColorMode } from '@chakra-ui/react';
+import { Box, Grid, Image, Text, useColorMode } from '@chakra-ui/react';
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -7,7 +7,7 @@ interface PageDescriptionBoxProps {
   title: string;
   text: string;
   navigationUrl: string;
-  image?: string; // Optional image parameter
+  image?: string;
 }
 
 const PageDescriptionBox: React.FC<PageDescriptionBoxProps> = ({
@@ -37,12 +37,18 @@ const PageDescriptionBox: React.FC<PageDescriptionBoxProps> = ({
       cursor="pointer"
       gap="4" // Adjust the gap between the text and image
       display="flex"
+      justifyContent="space-between"
+      transition="background-color 0.3s, transform 0.3s" // Add transition property
+      _hover={{
+        backgroundColor: isLightMode ? 'gray.100' : 'gray.700', // Change background color on hover
+        transform: 'scale(1.05)' // Scale up on hover
+      }}
     >
       <Box p="4">
-        <Text fontSize="xl" fontWeight="bold">
+        <Text fontSize={["md", "xl"]} fontWeight="bold">
           {title}
         </Text>
-        <Text>{text}</Text>
+        <Text fontSize={["small", "md"]} >{text}</Text>
       </Box>
       {image && (
         <Image

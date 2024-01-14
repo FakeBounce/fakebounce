@@ -4,34 +4,30 @@ import React from 'react';
 
 const HomeContentBoxes: React.FC = () => {
   return (
-    <Flex flexDirection={['column', 'row']} width="full" justifyContent="space-between">
-      {/* First Column */}
-      <Flex flexDirection="column" flex="1" mb={['4', '0']} mr={['0', '4']}>
+    <>
+      <Flex flexDirection={['column', 'row']} width="full" justifyContent="space-between">
         {/* CV */}
-        <PageDescriptionBox
-          title="Mon expérience ?"
-          text="Pour mon parcours de vie c'est ici !"
-          navigationUrl="/cv"
-          image="/images//cv.png"
-        />
-        {/* Contact */}
-        <PageDescriptionBox
-          title="Me contacter ?"
-          text="Les informations nécessaires sont juste là !"
-          navigationUrl="/contact"
-          image="/images//info.png"
-        />
+        <Flex flexDirection="column" flex={['1', '1']} width="full" mb={['4', '0']} mr={['0', '4']}>
+          <PageDescriptionBox
+            title="Mon expérience ?"
+            text="Pour mon parcours de vie c'est ici !"
+            navigationUrl="/cv"
+            image="/images//cv.png"
+          />
+        </Flex>
+
+        {/* Passions */}
+        <Flex flexDirection="column" flex={['1', '1']} width="full" mb={['4', '0']} mr={['0', '4']}>
+          <PageDescriptionBox
+            title="Me découvrir ?"
+            text="Pour en apprendre plus sur moi et mes passions !"
+            navigationUrl="/passions"
+            image="/images//brain.png"
+          />
+        </Flex>
       </Flex>
 
-      {/* Second Column */}
-      <Flex flexDirection="column" flex="1" mt={['4', '0']}>
-        {/* Passions */}
-        <PageDescriptionBox
-          title="Me découvrir ?"
-          text="Pour en apprendre plus sur moi et mes passions !"
-          navigationUrl="/passions"
-          image="/images//brain.png"
-        />
+      <Flex flexDirection="column" flex={['1', '1']} w={["100%", "50%"]} mb={['4', '0']} mr={['0', '4']}>
         {/* Others */}
         <PageDescriptionBox
           title="Autre ?"
@@ -40,7 +36,7 @@ const HomeContentBoxes: React.FC = () => {
           image="/images//roleplay.png"
         />
       </Flex>
-    </Flex>
+    </>
   );
 };
 

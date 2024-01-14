@@ -14,6 +14,7 @@ const LanguageSection: React.FC = () => {
         mb={['2rem', '2']}
         width="100%"
       >
+        {/* French Language */}
         <Image
           src="./images/france.jpg"
           alt={`french flag image`}
@@ -32,6 +33,14 @@ const LanguageSection: React.FC = () => {
               Maternelle
             </Text>
           </Flex>
+        </Flex>
+        {/* English Language */}
+        <Flex
+          flexDirection={{ base: 'column', md: 'row' }}
+          alignItems={{ base: 'center', md: 'start' }}
+          ml={{ base: 0, md: 4 }}
+          width="100%"
+        >
           <Image
             src="./images/english.jpg"
             alt={`american and british flag image`}
@@ -40,14 +49,16 @@ const LanguageSection: React.FC = () => {
             mr={{ base: 0, md: 4 }}
             mb={{ base: 2, md: 0 }}
           />
-          <Flex flexDirection="column" minW="7rem">
-            <Text fontWeight="bold">Anglais</Text>
-            <Text fontSize={['small', 'x-small']}>{"2008-Aujourd'hui"}</Text>
-          </Flex>
-          <Flex flexDirection="column" ml={{ base: 0, md: 4 }} mt={{ base: 2, md: 0 }} w="100%">
-            <Text fontSize={['md', 'small']} fontWeight="bold">
-              Courant
-            </Text>
+          <Flex flexDirection={{ base: 'column', md: 'row' }} ml={{ base: 0, md: 4 }} width="100%">
+            <Flex flexDirection="column" minW="7rem">
+              <Text fontWeight="bold">Anglais</Text>
+              <Text fontSize={['small', 'x-small']}>{"2008-Aujourd'hui"}</Text>
+            </Flex>
+            <Flex flexDirection="column" ml={{ base: 0, md: 4 }} mt={{ base: 2, md: 0 }} w="100%">
+              <Text fontSize={['md', 'small']} fontWeight="bold">
+                Courant
+              </Text>
+            </Flex>
           </Flex>
         </Flex>
       </Flex>
