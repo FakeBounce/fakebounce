@@ -1,5 +1,6 @@
-import { Box, Link, Text } from '@chakra-ui/react';
+import { Box, Icon, Link, Text } from '@chakra-ui/react';
 
+import { FaGithub } from 'react-icons/fa'; // Import GitHub icon
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -21,7 +22,14 @@ const Footer: React.FC = () => {
           romanellibenjamin66@gmail.com
         </Link>
       </Text>
-      <Text color="gray.400">Additional contact information here</Text>
+      {/* Replace "Additional contact information here" with GitHub icon */}
+      <Link
+        href="https://github.com/FakeBounce"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon as={FaGithub} color="gray.400" boxSize={6} />
+      </Link>
     </Box>
   );
 };
