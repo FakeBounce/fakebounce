@@ -15,7 +15,7 @@ const Greeting: React.FC = () => {
           Bonjour,
           <br />
           {myNameIs}
-          <Text as="span" color={isLightMode ? 'green.600' : 'green.300'} fontWeight="bold">
+          <Text as="span" color={isLightMode ? 'green.600' : 'green.300'} fontWeight="bold" data-testid="greeting-name">
             Benjamin
           </Text>
         </Text>

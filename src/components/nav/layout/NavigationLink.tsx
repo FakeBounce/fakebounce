@@ -3,7 +3,7 @@ import { Flex, Link, Text, useColorModeValue } from '@chakra-ui/react';
 import React from 'react';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
-interface NavigationLinkProps {
+export interface NavigationLinkProps {
   expanded: boolean;
   text: string;
   icon: React.ReactNode;

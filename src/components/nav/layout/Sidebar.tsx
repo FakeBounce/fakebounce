@@ -1,8 +1,8 @@
 import { Divider, Flex } from '@chakra-ui/react';
-import { sidebarWidth, useIsMobile } from '../../../const';
 
 import MenuContent from './MenuContent';
 import React from 'react';
+import { sidebarWidth } from '../../../const';
 
 interface SidebarProps {
   isExpanded: boolean;

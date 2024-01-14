@@ -1,7 +1,7 @@
-import { Box, Flex, Link, Text } from '@chakra-ui/react';
 import React, { useState } from 'react';
 import { contentWidth, useIsMobile } from '../../../const';
 
+import { Flex } from '@chakra-ui/react';
 import Footer from './Footer';
 import NavigationArrow from './NavigationArrow';
 import { Outlet } from 'react-router-dom';
@@ -15,11 +15,15 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
   const isExpanded = isMobile ? false : expanded;
 
   if (!withSidebar) {
-    return <Flex w="100vw" h="100vh"></Flex>;
+    return (
+      <Flex w="100vw" h="100vh" data-testid="flex-container">
+        <Outlet />
+      </Flex>
+    );
   }
 
   return (
-    <Flex flexDirection="column" height="100vh">
+    <Flex flexDirection="column" height="100vh" data-testid="flex-container">
       <Flex width="100vw">
         <Sidebar isExpanded={isExpanded} setExpanded={setExpanded} />
         <Flex

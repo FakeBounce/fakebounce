@@ -2,7 +2,10 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      // Add paths shortcuts
+      "@components/*": ["./src/components/*"],
+      "@app/*": ["./src/app/*"],
+      "@theme": ["./src/chakra/theme.ts"],
+      "@testProvider": ["./src/testProvider.tsx"]
     }
   }
 }

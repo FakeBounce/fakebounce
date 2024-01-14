@@ -11,6 +11,7 @@ const JobItem: React.FC<{
 }> = ({ jobImage, jobCompany, jobDate, jobTitle, jobDescription }) => {
   return (
     <Flex
+      data-testid={`job-item-${jobCompany}`}
       flexDirection={{ base: 'column', md: 'row' }} // Stack on mobile, row on larger screens
       alignItems={{ base: 'center', md: 'start' }}
       mb={['2rem', '2']}

@@ -9,9 +9,12 @@ const NavigationArrow: React.FC<{ isExpanded: boolean }> = ({ isExpanded }) => {
   const location = useLocation();
 
   const shouldShowBackButton = location.pathname !== '/';
+  console.log('hey',location.pathname)
   if (shouldShowBackButton) {
+    console.log('here',location.pathname)
     return (
       <Button
+        data-testid="back-button"
         onClick={() => navigate('/')}
         position="absolute"
         top="1rem"

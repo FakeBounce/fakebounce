@@ -49,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@reduxjs/toolkit": "1.7.1",
     "@types/react-redux": "7.1.22",
     "@types/react-router-dom": "^5.3.3",
@@ -57,5 +58,30 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "typescript": "^5.3.3"
+  },
+  "jest": {
+    "coverageReporters": [
+      "lcov",
+      "html"
+    ],
+    "collectCoverageFrom": [
+      "<rootDir>/src/**"
+    ],
+    "coveragePathIgnorePatterns": [
+      "node_modules",
+      "locales",
+      "tests",
+      "<rootDir>/src/index.tsx",
+      "<rootDir>/src/App.tsx"
+    ],
+    "testMatch": [
+      "<rootDir>/src/tests/**/*.test.tsx"
+    ],
+    "moduleNameMapper": {
+      "^@components(.*)$": "<rootDir>/src/components$1",
+      "^@app(.*)$": "<rootDir>/src/app$1",
+      "@theme": "<rootDir>/src/chakra/theme.ts",
+      "@testProvider": "<rootDir>/src/testProvider.tsx"
+    }
   }
 }
