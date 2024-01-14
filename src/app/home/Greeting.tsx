@@ -27,7 +27,7 @@ const Greeting: React.FC = () => {
         </Text>
       </Flex>
       <Image
-        src={'/dev.png'}
+        src={'./images/dev.png'}
         alt="Bearded Developer coding"
         boxSize={['0', '200px']} // Adjust boxSize for desktop and hide on mobile
         borderRadius="md"

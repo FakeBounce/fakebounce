@@ -12,14 +12,14 @@ const HomeContentBoxes: React.FC = () => {
           title="Mon expérience ?"
           text="Pour mon parcours de vie c'est ici !"
           navigationUrl="/cv"
-          image="/cv.png"
+          image="/images//cv.png"
         />
         {/* Contact */}
         <PageDescriptionBox
           title="Me contacter ?"
           text="Les informations nécessaires sont juste là !"
           navigationUrl="/contact"
-          image="/info.png"
+          image="/images//info.png"
         />
       </Flex>
 
@@ -30,14 +30,14 @@ const HomeContentBoxes: React.FC = () => {
           title="Me découvrir ?"
           text="Pour en apprendre plus sur moi et mes passions !"
           navigationUrl="/passions"
-          image="/brain.png"
+          image="/images//brain.png"
         />
         {/* Others */}
         <PageDescriptionBox
           title="Autre ?"
           text="Pour les rôlistes aguerris ou débutants, c'est par là !"
           navigationUrl="/autres"
-          image="/roleplay.png"
+          image="/images//roleplay.png"
         />
       </Flex>
     </Flex>

@@ -8,7 +8,14 @@ const SkillItem: React.FC<{
   circularDescription: string;
 }> = ({ circularValue, circularLabel, circularDescription }) => {
   return (
-    <Flex flexDirection="column" alignItems="center" mb={["4","0"]}>
+    <Flex
+      flexDirection="column"
+      alignItems="center"
+      mb={['4', '0']}
+      maxW={['100%', '25%']}
+      mr={['0', '2']}
+      ml={['0', '2']}
+    >
       <CircularProgress
         value={circularValue}
         size="100px"

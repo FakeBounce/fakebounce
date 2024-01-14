@@ -17,7 +17,7 @@ const Home: React.FC = () => {
         my={['auto', 'auto', 'auto']} // Center vertically only for desktop
       >
         <Image
-          src={'/dev.png'}
+          src={'./images/dev.png'}
           alt="Bearded Developer coding"
           mb={['2', '0']}
           boxSize={['200px', 'auto']} // Adjust boxSize for mobile and desktop

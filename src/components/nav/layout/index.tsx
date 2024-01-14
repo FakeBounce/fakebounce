@@ -1,22 +1,26 @@
+import { ArrowBackIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { Button, Divider, Flex, useColorMode } from '@chakra-ui/react';
-import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import { contentWidth, sidebarWidth, useIsMobile } from '../../../const';
 
 import MenuContent from './MenuContent';
-import { Outlet } from 'react-router-dom';
 
 const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
   const isMobile = useIsMobile();
   const [expanded, setExpanded] = useState<boolean>(!isMobile);
   const { colorMode, toggleColorMode } = useColorMode();
   const isLightMode = colorMode === 'light';
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const isExpanded = isMobile ? false : expanded;
 
   if (!withSidebar) {
     return <Flex w="100vw" h="100vh"></Flex>;
   }
+
+  const shouldShowBackButton = location.pathname !== '/';
 
   return (
     <Flex width="100vw" height="100vh">
@@ -35,11 +39,22 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
         w={contentWidth(isExpanded)}
         gap="2rem"
         justifyContent="center"
+        position="relative"
         transition="all 0.3s ease"
       >
-        <Button onClick={toggleColorMode} position="absolute" top="1rem" right="1rem">
+        <Button onClick={toggleColorMode} position="fixed" top="1rem" right="3rem">
           {isLightMode ? <SunIcon /> : <MoonIcon />}
         </Button>
+        {shouldShowBackButton && (
+          <Button
+            onClick={() => navigate('/')}
+            position="absolute"
+            top="1rem"
+            left={isExpanded ? 'calc(5rem + 2rem)' : '2rem'}
+          >
+            <ArrowBackIcon />
+          </Button>
+        )}
         <Outlet />
       </Flex>
     </Flex>

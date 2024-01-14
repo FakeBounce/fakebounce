@@ -1,4 +1,4 @@
-import { Flex, Heading, Image, Text } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 
 import JobItem from './JobItem';
 import React from 'react';

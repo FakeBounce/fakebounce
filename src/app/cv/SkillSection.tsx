@@ -7,7 +7,6 @@ const SkillSection: React.FC = () => {
     <Flex flexDirection="column" mb="4" p="4" borderRadius="md">
       <Flex
         flexDirection={{ base: 'column', md: 'row' }} // Stack on mobile, row on larger screens
-        justifyContent="space-around"
         width="full"
       >
         <SkillItem
