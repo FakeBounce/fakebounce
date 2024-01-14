@@ -38,3 +38,4 @@ test('renders NavigationLink correctly', () => {
   // Check if the font size is adjusted when expanded
   expect(text).toHaveStyle({ fontSize: 'sm' });
 });
+
