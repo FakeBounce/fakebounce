@@ -2,7 +2,7 @@
 import { useMediaQuery } from '@chakra-ui/react';
 
 export const useIsMobile = () => {
-  return useMediaQuery('(max-width: 768px)')[0]; // Adjust the breakpoint as needed
+  return useMediaQuery('(max-width: 768px)')[0]; // 0 to get the boolean isMobile: true or isMobile: false
 };
 
 export const sidebarWidth = (isExpanded: boolean) => {
@@ -13,8 +13,8 @@ export const sidebarWidth = (isExpanded: boolean) => {
 };
 
 export const contentWidth = (isExpanded: boolean) => {
-    if (isExpanded) {
-      return '85vw';
-    }
-    return '95vw';
-  };
+  if (isExpanded) {
+    return '85vw';
+  }
+  return '95vw';
+};

@@ -1,7 +1,7 @@
 import { fireEvent, render, screen } from '@testProvider';
 
 import React from 'react';
-import ThemeChanger from '@components/nav/layout/ThemeChanger'; // Adjust the import path as needed
+import ThemeChanger from '@components/nav/layout/ThemeChanger';
 
 test('renders ThemeChanger correctly', () => {
   render(<ThemeChanger />);
