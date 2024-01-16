@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
       zIndex="1"
     >
       <Text color="white">
-        Contact me at{' '}
+        Contactez moi à{' '}
         <Link color="teal.300" href="mailto:romanellibenjamin66@gmail.com">
           romanellibenjamin66@gmail.com
         </Link>

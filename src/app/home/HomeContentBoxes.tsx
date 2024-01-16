@@ -16,12 +16,12 @@ const HomeContentBoxes: React.FC = () => {
           />
         </Flex>
 
-        {/* Passions */}
+        {/* A propos */}
         <Flex flexDirection="column" flex={['1', '1']} width="full" mb={['4', '0']} mr={['0', '4']}>
           <PageDescriptionBox
             title="Me découvrir ?"
             text="Pour en apprendre plus sur moi et mes passions !"
-            navigationUrl="/passions"
+            navigationUrl="/about"
             image="/images//brain.png"
           />
         </Flex>
@@ -32,7 +32,7 @@ const HomeContentBoxes: React.FC = () => {
         <PageDescriptionBox
           title="Autre ?"
           text="Pour les rôlistes aguerris ou débutants, c'est par là !"
-          navigationUrl="/autres"
+          navigationUrl="/autre"
           image="/images//roleplay.png"
         />
       </Flex>

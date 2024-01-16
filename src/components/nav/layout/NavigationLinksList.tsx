@@ -1,4 +1,4 @@
-import { FaFileAlt, FaHome } from 'react-icons/fa'; // Import Chakra icons
+import { FaEllipsisH, FaFileAlt, FaHome, FaUser } from 'react-icons/fa'; // Import Chakra icons
 
 import { Box } from '@chakra-ui/react';
 import NavigationLink from './NavigationLink';
@@ -11,6 +11,13 @@ const NavigationLinksList: React.FC<{
     <Box minW="2.5rem" gap="1rem">
       <NavigationLink expanded={expanded} text="Accueil" icon={<FaHome size={25} />} to="/" />
       <NavigationLink expanded={expanded} text="Mon CV" icon={<FaFileAlt size={25} />} to="/cv" />
+      <NavigationLink expanded={expanded} text="A propos" icon={<FaUser size={25} />} to="/about" />
+      <NavigationLink
+        expanded={expanded}
+        text="Autre"
+        icon={<FaEllipsisH size={25} />}
+        to="/autre"
+      />
     </Box>
   );
 };

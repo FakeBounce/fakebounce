@@ -38,7 +38,7 @@ describe('HomeContentBoxes', () => {
       'data-text',
       'Pour en apprendre plus sur moi et mes passions !'
     );
-    expect(passionsBox).toHaveAttribute('data-navigation-url', '/passions');
+    expect(passionsBox).toHaveAttribute('data-navigation-url', '/about');
     expect(passionsBox).toHaveAttribute('data-image', '/images//brain.png');
 
     expect(othersBox).toBeInTheDocument();
@@ -47,7 +47,7 @@ describe('HomeContentBoxes', () => {
       'data-text',
       "Pour les rôlistes aguerris ou débutants, c'est par là !"
     );
-    expect(othersBox).toHaveAttribute('data-navigation-url', '/autres');
+    expect(othersBox).toHaveAttribute('data-navigation-url', '/autre');
     expect(othersBox).toHaveAttribute('data-image', '/images//roleplay.png');
   });
 });

@@ -20,9 +20,19 @@ describe('NavigationLinksList', () => {
     const cvLink = screen.getByText('Mon CV');
     expect(cvLink).toBeInTheDocument();
     expect(cvLink).toHaveTextContent('Mon CV');
+
+    // Check if the "A propos" navigation link is rendered
+    const aboutLink = screen.getByText('A propos');
+    expect(aboutLink).toBeInTheDocument();
+    expect(aboutLink).toHaveTextContent('A propos');
+
+    // Check if the "Mon CV" navigation link is rendered
+    const autreLink = screen.getByText('Autre');
+    expect(autreLink).toBeInTheDocument();
+    expect(autreLink).toHaveTextContent('Autre');
   });
 
-  test('renders two anchor elements when expanded', () => {
+  test('renders four anchor elements when expanded', () => {
     render(
       <Routes location={'/'}>
         <Route path="*" element={<NavigationLinksList expanded={true} />} />
@@ -31,6 +41,6 @@ describe('NavigationLinksList', () => {
 
     // Check if there are two anchor elements
     const anchorElements = screen.getAllByRole('link');
-    expect(anchorElements).toHaveLength(2);
+    expect(anchorElements).toHaveLength(4);
   });
 });

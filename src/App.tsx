@@ -1,6 +1,6 @@
 import './App.css';
 
-import { CV, Home } from './pages';
+import { About, CV, Home, Other } from './pages';
 import { Route, Routes } from 'react-router-dom';
 
 import { ChakraProvider } from '@chakra-ui/react';
@@ -16,9 +16,11 @@ const App: React.FC = () => {
         <Route element={<Layout withSidebar />}>
           <Route path="/" element={<Home />} />
           <Route path="/cv" element={<CV />} />
+          <Route path="/about" element={<About />} />
 
           <Route path="*" element={<ErrorPage />} />
         </Route>
+        <Route path="/autre" element={<Other />} />
       </Routes>
     </ChakraProvider>
   );
