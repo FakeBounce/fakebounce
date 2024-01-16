@@ -1,6 +1,8 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 import React from 'react';
+import englishLogo from '../../assets/images/english.jpg';
+import franceLogo from '../../assets/images/france.jpg';
 
 const LanguageSection: React.FC = () => {
   return (
@@ -16,7 +18,7 @@ const LanguageSection: React.FC = () => {
       >
         {/* French Language */}
         <Image
-          src="./images/france.jpg"
+          src={franceLogo}
           alt={`french flag image`}
           boxSize="50px"
           borderRadius="full"
@@ -42,7 +44,7 @@ const LanguageSection: React.FC = () => {
           width="100%"
         >
           <Image
-            src="./images/english.jpg"
+            src={englishLogo}
             alt={`american and british flag image`}
             boxSize="50px"
             borderRadius="full"

@@ -3,6 +3,7 @@ import { Flex, Image } from '@chakra-ui/react';
 import Greeting from './Greeting';
 import HomeContentBoxes from './HomeContentBoxes';
 import React from 'react';
+import devImage from '../../assets/images/dev.png';
 
 const Home: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Home: React.FC = () => {
         my={['auto', 'auto', 'auto']} // Center vertically only for desktop
       >
         <Image
-          src={'./images/dev.png'}
+          src={devImage}
           alt="Bearded Developer coding"
           mb={['2', '0']}
           boxSize={['200px', 'auto']} // Adjust boxSize for mobile and desktop

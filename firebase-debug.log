@@ -1,0 +1,52 @@
+[debug] [2024-01-16T09:50:49.382Z] ----------------------------------------------------------------------
+[debug] [2024-01-16T09:50:49.383Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2024-01-16T09:50:49.384Z] CLI Version:   13.0.3
+[debug] [2024-01-16T09:50:49.384Z] Platform:      darwin
+[debug] [2024-01-16T09:50:49.384Z] Node Version:  v18.14.0
+[debug] [2024-01-16T09:50:49.385Z] Time:          Tue Jan 16 2024 10:50:49 GMT+0100 (Central European Standard Time)
+[debug] [2024-01-16T09:50:49.385Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-01-16T09:50:49.454Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-01-16T09:50:49.454Z] > authorizing via signed-in user (romanellibenjamin66@gmail.com)
+[debug] [2024-01-16T09:50:49.455Z] [iam] checking project fakebounce-website for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2024-01-16T09:50:49.457Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/fakebounce-website:testIamPermissions [none]
+[debug] [2024-01-16T09:50:49.457Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/fakebounce-website:testIamPermissions x-goog-quota-user=projects/fakebounce-website
+[debug] [2024-01-16T09:50:49.457Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fakebounce-website:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-16T09:50:50.240Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/fakebounce-website:testIamPermissions 200
+[debug] [2024-01-16T09:50:50.241Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/fakebounce-website:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2024-01-16T09:50:50.242Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website [none]
+[debug] [2024-01-16T09:50:50.532Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website 200
+[debug] [2024-01-16T09:50:50.532Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website {"projectId":"fakebounce-website","projectNumber":"488534112501","displayName":"fakebounce-website","name":"projects/fakebounce-website","resources":{"hostingSite":"fakebounce-website","realtimeDatabaseInstance":"fakebounce-website-default-rtdb","storageBucket":"fakebounce-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_41eb7165-b8a8-43ea-9446-bf81eedc6490"}
+[debug] [2024-01-16T09:50:50.532Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website [none]
+[debug] [2024-01-16T09:50:50.770Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website 200
+[debug] [2024-01-16T09:50:50.770Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/fakebounce-website {"projectId":"fakebounce-website","projectNumber":"488534112501","displayName":"fakebounce-website","name":"projects/fakebounce-website","resources":{"hostingSite":"fakebounce-website","realtimeDatabaseInstance":"fakebounce-website-default-rtdb","storageBucket":"fakebounce-website.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_41eb7165-b8a8-43ea-9446-bf81eedc6490"}
+[info] 
+[info] === Deploying to 'fakebounce-website'...
+[info] 
+[info] i  deploying database, storage, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2024-01-16T09:50:50.773Z] >>> [apiv2][query] GET https://firebasedatabase.googleapis.com/v1beta/projects/fakebounce-website/locations/-/instances/fakebounce-website-default-rtdb [none]
+[debug] [2024-01-16T09:50:51.601Z] <<< [apiv2][status] GET https://firebasedatabase.googleapis.com/v1beta/projects/fakebounce-website/locations/-/instances/fakebounce-website-default-rtdb 200
+[debug] [2024-01-16T09:50:51.602Z] <<< [apiv2][body] GET https://firebasedatabase.googleapis.com/v1beta/projects/fakebounce-website/locations/-/instances/fakebounce-website-default-rtdb {"name":"projects/488534112501/locations/europe-west1/instances/fakebounce-website-default-rtdb","project":"projects/488534112501","databaseUrl":"https://fakebounce-website-default-rtdb.europe-west1.firebasedatabase.app","type":"DEFAULT_DATABASE","state":"ACTIVE"}
+[debug] [2024-01-16T09:50:51.603Z] >>> [apiv2][query] PUT https://fakebounce-website-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json dryRun=true
+[debug] [2024-01-16T09:50:51.603Z] >>> [apiv2][body] PUT https://fakebounce-website-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json "{\n  \"rules\": {\n    \".read\": false,\n    \".write\": false\n  }\n}\n"
+[debug] [2024-01-16T09:50:51.745Z] <<< [apiv2][status] PUT https://fakebounce-website-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json 200
+[debug] [2024-01-16T09:50:51.745Z] <<< [apiv2][body] PUT https://fakebounce-website-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json {"status":"ok"}
+[info] ✔  database: rules syntax for database fakebounce-website-default-rtdb is valid 
+[info] i  storage: ensuring required API firebasestorage.googleapis.com is enabled... 
+[debug] [2024-01-16T09:50:51.746Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/fakebounce-website/services/firebasestorage.googleapis.com [none]
+[debug] [2024-01-16T09:50:51.746Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/fakebounce-website/services/firebasestorage.googleapis.com x-goog-quota-user=projects/fakebounce-website
+[debug] [2024-01-16T09:50:52.653Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/fakebounce-website/services/firebasestorage.googleapis.com 200
+[debug] [2024-01-16T09:50:52.653Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/fakebounce-website/services/firebasestorage.googleapis.com [omitted]
+[info] ✔  storage: required API firebasestorage.googleapis.com is enabled 
+[debug] [2024-01-16T09:50:52.654Z] >>> [apiv2][query] GET https://firebasestorage.googleapis.com/v1alpha/projects/fakebounce-website/defaultBucket [none]
+[debug] [2024-01-16T09:50:53.045Z] <<< [apiv2][status] GET https://firebasestorage.googleapis.com/v1alpha/projects/fakebounce-website/defaultBucket 200
+[debug] [2024-01-16T09:50:53.045Z] <<< [apiv2][body] GET https://firebasestorage.googleapis.com/v1alpha/projects/fakebounce-website/defaultBucket {"name":"projects/fakebounce-website/defaultBucket","location":"EU","bucket":{"name":"projects/fakebounce-website/buckets/fakebounce-website.appspot.com"}}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2024-01-16T09:50:53.046Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/fakebounce-website:test [none]
+[debug] [2024-01-16T09:50:53.046Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/fakebounce-website:test [omitted]
+[debug] [2024-01-16T09:50:53.793Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/fakebounce-website:test 200
+[debug] [2024-01-16T09:50:53.793Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/fakebounce-website:test {}
+[info] ✔  firebase.storage: rules file storage.rules compiled successfully 
+[debug] [2024-01-16T09:50:53.795Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fakebounce-website/versions [none]
+[debug] [2024-01-16T09:50:53.795Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/fakebounce-website/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}

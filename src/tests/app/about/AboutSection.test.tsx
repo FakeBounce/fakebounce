@@ -5,7 +5,8 @@ import AboutSection from '@app/about/AboutSection';
 const sectionMock = {
   title: 'Mock Title',
   description: 'Mock Description',
-  imageSrc: 'mockImage'
+  imageSrc: 'mockImage',
+  imageInvertedSrc: 'mockInvertedImage'
 };
 
 describe('AboutSection component', () => {

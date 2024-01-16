@@ -5,7 +5,7 @@
       "@components/*": ["./src/components/*"],
       "@app/*": ["./src/app/*"],
       "@theme": ["./src/chakra/theme.ts"],
-      "@testProvider": ["./src/testProvider.tsx"]
+      "@testProvider": ["./src/testProvider.tsx"],
     }
   }
 }

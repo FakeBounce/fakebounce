@@ -30,7 +30,6 @@ describe('HomeContentBoxes', () => {
     expect(cvBox).toHaveAttribute('data-title', 'Mon expérience ?');
     expect(cvBox).toHaveAttribute('data-text', "Pour mon parcours de vie c'est ici !");
     expect(cvBox).toHaveAttribute('data-navigation-url', '/cv');
-    expect(cvBox).toHaveAttribute('data-image', '/images//cv.png');
 
     expect(passionsBox).toBeInTheDocument();
     expect(passionsBox).toHaveAttribute('data-title', 'Me découvrir ?');
@@ -39,7 +38,6 @@ describe('HomeContentBoxes', () => {
       'Pour en apprendre plus sur moi et mes passions !'
     );
     expect(passionsBox).toHaveAttribute('data-navigation-url', '/about');
-    expect(passionsBox).toHaveAttribute('data-image', '/images//brain.png');
 
     expect(othersBox).toBeInTheDocument();
     expect(othersBox).toHaveAttribute('data-title', 'Autre ?');
@@ -48,6 +46,5 @@ describe('HomeContentBoxes', () => {
       "Pour les rôlistes aguerris ou débutants, c'est par là !"
     );
     expect(othersBox).toHaveAttribute('data-navigation-url', '/autre');
-    expect(othersBox).toHaveAttribute('data-image', '/images//roleplay.png');
   });
 });

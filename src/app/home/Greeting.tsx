@@ -1,6 +1,7 @@
 import { Flex, Image, Text, useColorMode } from '@chakra-ui/react';
 
 import React from 'react';
+import devImage from '../../assets/images/dev.png';
 
 const myNameIs = "je m'appelle ";
 
@@ -15,7 +16,12 @@ const Greeting: React.FC = () => {
           Bonjour,
           <br />
           {myNameIs}
-          <Text as="span" color={isLightMode ? 'green.600' : 'green.300'} fontWeight="bold" data-testid="greeting-name">
+          <Text
+            as="span"
+            color={isLightMode ? 'green.600' : 'green.300'}
+            fontWeight="bold"
+            data-testid="greeting-name"
+          >
             Benjamin
           </Text>
         </Text>
@@ -27,7 +33,7 @@ const Greeting: React.FC = () => {
         </Text>
       </Flex>
       <Image
-        src={'./images/dev.png'}
+        src={devImage}
         alt="Bearded Developer coding"
         boxSize={['0', '200px']} // Adjust boxSize for desktop and hide on mobile
         borderRadius="md"

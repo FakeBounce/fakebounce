@@ -1,6 +1,9 @@
 import { Flex } from '@chakra-ui/react';
 import PageDescriptionBox from './PageDescriptionBox';
 import React from 'react';
+import brainImage from '../../assets/images/brain.png'
+import cvImage from '../../assets/images/cv.png'
+import roleplayImage from '../../assets/images/roleplay.png'
 
 const HomeContentBoxes: React.FC = () => {
   return (
@@ -12,7 +15,7 @@ const HomeContentBoxes: React.FC = () => {
             title="Mon expérience ?"
             text="Pour mon parcours de vie c'est ici !"
             navigationUrl="/cv"
-            image="/images//cv.png"
+            image={cvImage}
           />
         </Flex>
 
@@ -22,7 +25,7 @@ const HomeContentBoxes: React.FC = () => {
             title="Me découvrir ?"
             text="Pour en apprendre plus sur moi et mes passions !"
             navigationUrl="/about"
-            image="/images//brain.png"
+            image={brainImage}
           />
         </Flex>
       </Flex>
@@ -33,7 +36,7 @@ const HomeContentBoxes: React.FC = () => {
           title="Autre ?"
           text="Pour les rôlistes aguerris ou débutants, c'est par là !"
           navigationUrl="/autre"
-          image="/images//roleplay.png"
+          image={roleplayImage}
         />
       </Flex>
     </>

@@ -12,6 +12,7 @@ import {
 
 import NavigationArrow from '../../components/nav/layout/NavigationArrow';
 import React from 'react';
+import rolistHubImage from '../../assets/images/coinDuRoliste.jpg';
 
 const Other: React.FC = () => {
   const isMobile = useBreakpointValue({ base: true, md: false });
@@ -38,7 +39,7 @@ const Other: React.FC = () => {
           <Flex maxW="50vw">
             <Box flex={{ base: '1', md: '1' }}>
               <Image
-                src="./images/coinDuRoliste.jpg"
+                src={rolistHubImage}
                 alt="Le coin du rôliste"
                 w="100%"
                 h="100%"
@@ -57,7 +58,7 @@ const Other: React.FC = () => {
           p="4"
           maxW={{ base: '100%', md: '50vw' }}
         >
-          <Flex maxW={["80vw", "40vw"]}>
+          <Flex maxW={['80vw', '40vw']}>
             <FormControl>
               <FormLabel>Email</FormLabel>
               <Input type="email" placeholder="Email" mb="2" />

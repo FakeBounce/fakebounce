@@ -1,6 +1,7 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 import React from 'react';
+import esgiImage from '../../assets/images/esgi.jpg';
 
 const EducationSection: React.FC = () => {
   return (
@@ -15,8 +16,8 @@ const EducationSection: React.FC = () => {
         width="100%"
       >
         <Image
-          src="./images/esgi.jpg"
-          alt={`school image`}
+          src={esgiImage}
+          alt={`ESGI school image`}
           boxSize="50px"
           borderRadius="full"
           mr={{ base: 0, md: 4 }}
