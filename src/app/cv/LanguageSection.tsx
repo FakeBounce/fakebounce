@@ -19,6 +19,7 @@ const LanguageSection: React.FC = () => {
       >
         {/* French Language */}
         <Image
+          loading="lazy"
           src={franceLogo}
           alt={`french flag image`}
           boxSize="50px"
@@ -47,6 +48,7 @@ const LanguageSection: React.FC = () => {
           width="100%"
         >
           <Image
+            loading="lazy"
             src={englishLogo}
             alt={`american and british flag image`}
             boxSize="50px"

@@ -18,6 +18,7 @@ const Home: React.FC = () => {
         my={['auto', 'auto', 'auto']} // Center vertically only for desktop
       >
         <Image
+          loading="lazy"
           src={devImage}
           alt="Bearded Developer coding"
           mb={['2', '0']}

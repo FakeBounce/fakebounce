@@ -17,6 +17,7 @@ const EducationSection: React.FC = () => {
         width="100%"
       >
         <Image
+          loading="lazy"
           src={esgiImage}
           alt={`ESGI school image`}
           boxSize="50px"

@@ -19,6 +19,7 @@ const JobItem: React.FC<IJobItem> = ({
       width="100%"
     >
       <Image
+        loading="lazy"
         src={jobImage}
         alt={`${jobCompany} image`}
         boxSize="50px"

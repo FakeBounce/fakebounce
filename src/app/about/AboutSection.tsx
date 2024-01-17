@@ -38,7 +38,7 @@ const AboutSection: React.FC<{ isEven: boolean; section: TAboutSection }> = ({
             p="4"
             textAlign="center"
           >
-            <Image src={imageRender} alt={`Section ${section.title}`} />
+            <Image loading="lazy" src={imageRender} alt={`Section ${section.title}`} />
           </Flex>
           <Flex flexDirection="column" flex={{ base: '1', md: '2' }} p="2rem">
             <Text mt="4" fontSize="4xl" fontWeight="bold" mb="4" color={getTextColor()}>
@@ -66,7 +66,7 @@ const AboutSection: React.FC<{ isEven: boolean; section: TAboutSection }> = ({
           maxW={['100vw', '30vw']}
           textAlign="center"
         >
-          <Image src={imageRender} alt={`Section ${section.title}`} />
+          <Image loading="lazy" src={imageRender} alt={`Section ${section.title}`} />
         </Flex>
       </>
     );

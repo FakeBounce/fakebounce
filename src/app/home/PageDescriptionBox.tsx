@@ -53,6 +53,7 @@ const PageDescriptionBox: React.FC<PageDescriptionBoxProps> = ({
       </Box>
       {image && (
         <Image
+          loading="lazy"
           src={image}
           alt={`${title} Image`}
           borderBottomRightRadius="md"

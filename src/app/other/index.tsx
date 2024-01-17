@@ -40,6 +40,7 @@ const Other: React.FC = () => {
           <Flex maxW="50vw">
             <Box flex={{ base: '1', md: '1' }}>
               <Image
+                loading="lazy"
                 src={rolistHubImage}
                 alt="Le coin du rôliste"
                 w="100%"
