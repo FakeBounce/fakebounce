@@ -1,0 +1,37 @@
+{
+  "locales": [
+    "en",
+    "fr"
+  ],
+  "sourceLocale": "fr",
+  "catalogs": [
+    {
+      "path": "src/locales/{name}/{locale}",
+      "include": [
+        "src/app/{name}",
+        "src/components/{name}"
+      ],
+      "exclude": [
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "path": "src/locales/{locale}",
+      "include": [
+        "src/**/"
+      ],
+      "exclude": [
+        "**/node_modules/**",
+        "src/app/**",
+        "src/components/**",
+        "src/utils/**",
+        "src/chakra/**"
+      ]
+    }
+  ],
+  "runtimeConfigModule": [
+    "@lingui/core",
+    "i18n"
+  ],
+  "orderBy": "messageId"
+}

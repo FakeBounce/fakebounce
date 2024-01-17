@@ -5,7 +5,7 @@ import { Link as ReactRouterLink } from 'react-router-dom';
 
 export interface NavigationLinkProps {
   expanded: boolean;
-  text: string;
+  text: React.ReactNode;
   icon: React.ReactNode;
   to: string;
 }

@@ -1,13 +1,14 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react';
 
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import esgiImage from '../../assets/images/esgi.jpg';
 
 const EducationSection: React.FC = () => {
   return (
     <Flex flexDirection="column" width="100%" p="4" borderRadius="md">
       <Heading fontSize="lg" mb="2">
-        Formation
+        <Trans>Formation</Trans>
       </Heading>
       <Flex
         flexDirection={{ base: 'column', md: 'row' }} // Stack on mobile, row on larger screens
@@ -25,15 +26,17 @@ const EducationSection: React.FC = () => {
         />
         <Flex flexDirection={{ base: 'column', md: 'row' }} ml={{ base: 0, md: 4 }} width="100%">
           <Flex flexDirection="column" minW="7rem">
-            <Text fontWeight="bold">ESGI</Text>
+            <Text fontWeight="bold" mb="0">
+              ESGI
+            </Text>
             <Text fontSize={['small', 'x-small']}>2012-2017</Text>
           </Flex>
           <Flex flexDirection="column" ml={{ base: 0, md: 4 }} mt={{ base: 2, md: 0 }} w="100%">
-            <Text fontSize={['md', 'small']} fontWeight="bold">
-              Master ESGI Ingénierie du Web en Alternance
+            <Text fontSize={['md', 'small']} fontWeight="bold" mb="0">
+              <Trans>Master ESGI Ingénierie du Web en Alternance</Trans>
             </Text>
             <Text fontSize={['md', 'small']}>
-              Compréhension des technologies du web et algorythmie
+              <Trans>Compréhension des technologies du web et algorythmie</Trans>
             </Text>
           </Flex>
         </Flex>

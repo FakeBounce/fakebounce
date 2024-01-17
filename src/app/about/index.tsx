@@ -2,6 +2,7 @@ import { Flex, Text, useColorMode } from '@chakra-ui/react';
 
 import AboutSection from './AboutSection';
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import { sections } from './sectionList';
 
 const About: React.FC = () => {
@@ -11,7 +12,7 @@ const About: React.FC = () => {
     <Flex flexDirection="column" width="full">
       <Flex alignItems="center" justifyContent="center" minH="10vh">
         <Text fontSize="3xl" fontWeight="bold" color={isLightThemed ? 'black' : 'white'}>
-          A propos
+          <Trans>A propos</Trans>
         </Text>
       </Flex>
 

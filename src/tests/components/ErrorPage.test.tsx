@@ -1,7 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import { act, fireEvent, render, screen } from '@testProvider';
 
-import ErrorPage from '@components/ErrorPage';
+import ErrorPage from '@components/nav/ErrorPage';
 
 describe('ErrorPage component', () => {
   test('renders without errors', () => {

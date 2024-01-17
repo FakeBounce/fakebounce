@@ -1,17 +1,22 @@
 import './App.css';
 
 import { About, CV, Home, Other } from './pages';
+import React, { useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { dynamicActivate, getLocale } from './i18n';
 
-import { ChakraProvider } from '@chakra-ui/react';
-import ErrorPage from './components/ErrorPage';
+import ErrorPage from './components/nav/ErrorPage';
+import { I18nProvider } from '@lingui/react';
 import Layout from './components/nav/layout';
-import React from 'react';
-import theme from './chakra/theme';
+import { i18n } from '@lingui/core';
 
 const App: React.FC = () => {
+  useEffect(() => {
+    dynamicActivate(getLocale());
+  }, []);
+
   return (
-    <ChakraProvider theme={theme}>
+    <I18nProvider i18n={i18n}>
       <Routes>
         <Route element={<Layout withSidebar />}>
           <Route path="/" element={<Home />} />
@@ -22,7 +27,7 @@ const App: React.FC = () => {
         </Route>
         <Route path="/autre" element={<Other />} />
       </Routes>
-    </ChakraProvider>
+    </I18nProvider>
   );
 };
 

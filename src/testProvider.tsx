@@ -5,7 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { ChakraProvider } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
 import { configureStore } from '@reduxjs/toolkit';
-import { reducer } from './app/store';
+import { reducer } from './utils/store';
 import theme from './chakra/theme';
 
 function customRender(

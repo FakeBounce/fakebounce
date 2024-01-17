@@ -2,12 +2,14 @@ import './index.css';
 
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react';
 import { Provider } from 'react-redux';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { initializeApp } from 'firebase/app';
 import reportWebVitals from './reportWebVitals';
-import { store } from './app/store';
+import { store } from './utils/store';
+import theme from './chakra/theme';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -23,7 +25,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 initializeApp(firebaseConfig);
-// const analytics = getAnalytics(firebaseApp); // Getting analytics
 
 const container = document.getElementById('root');
 const root = createRoot(container!);
@@ -32,7 +33,9 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
+        <ChakraProvider theme={theme}>
+          <App />
+        </ChakraProvider>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>

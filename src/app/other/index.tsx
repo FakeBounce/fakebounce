@@ -12,6 +12,7 @@ import {
 
 import NavigationArrow from '../../components/nav/layout/NavigationArrow';
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import rolistHubImage from '../../assets/images/coinDuRoliste.jpg';
 
 const Other: React.FC = () => {
@@ -30,7 +31,7 @@ const Other: React.FC = () => {
         <NavigationArrow isExpanded={false} />
         {/* Title on top */}
         <Text mt="4" fontSize={{ base: '3xl', md: '4xl' }} fontWeight="bold" mb="4">
-          Le coin du rôliste
+          <Trans>Le coin du rôliste</Trans>
         </Text>
       </Flex>
       <Flex flexDirection={{ base: 'column', md: 'row' }} minH="100vh" textAlign="center">
@@ -60,14 +61,18 @@ const Other: React.FC = () => {
         >
           <Flex maxW={['80vw', '40vw']}>
             <FormControl>
-              <FormLabel>Email</FormLabel>
+              <FormLabel>
+                <Trans>Email</Trans>
+              </FormLabel>
               <Input type="email" placeholder="Email" mb="2" />
 
-              <FormLabel>Mot de passe</FormLabel>
+              <FormLabel>
+                <Trans>Mot de passe</Trans>
+              </FormLabel>
               <Input type="password" placeholder="Mot de passe" mb="2" />
 
               <Button colorScheme="blue" mt="4">
-                Se connecter
+                <Trans>Se connecter</Trans>
               </Button>
             </FormControl>
           </Flex>

@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2024-01-16 20:46+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/app/about/sectionList.tsx:21
+msgid "Qui suis-je ?"
+msgstr "Who am I ?"
+
+#: src/app/about/sectionList.tsx:51
+msgid "L'art, c'est fait pour être partagé, ce serait triste de le laisser prendre la poussière. C'est en faisant découvrir et en apprenant de nouvelles choses que l'on progresse, je n'hésite pas à me lancer vers de nouveaux horizons. Ayant un esprit compétitif de nature, les challenges ne me font pas peur, bien au contraire."
+msgstr "Art is meant to be shared; it would be sad to let it gather dust. It is through discovering and learning new things that we progress, and I am not hesitant to venture into new horizons. With a competitive spirit by nature, challenges do not frighten me; on the contrary, I embrace them."
+
+#: src/app/about/sectionList.tsx:23
+msgid "Passionné d'optimisation, je suis depuis tout petit plongé dans des univers fantastiques. En m'orientant dans une école d'informatique, j'ai compris rapidement que le développement était fait pour moi. Développer est un art, je prends plaisir dans chaque projet que je conçois. Que ce soit pour des entreprises ou pour mon plaisir personnel, je laisse s'exprimer mon envie de créer."
+msgstr "Passionate about optimization, I have been immersed in fantastical worlds since I was a child. By choosing a path in a computer science school, I quickly realized that development was the right fit for me. Developing is an art, and I take pleasure in every project I undertake. Whether it's for businesses or my personal enjoyment, I let my desire to create express itself."
+
+#: src/app/about/index.tsx:15
+msgid "A propos"
+msgstr "About"
+
+#: src/app/about/sectionList.tsx:49
+msgid "Mais pas que"
+msgstr "Not only"
+
+#: src/app/about/sectionList.tsx:35
+msgid "Ce que j'aime"
+msgstr "What I like"
+
+#: src/app/about/sectionList.tsx:64
+msgid "Après des années de quête, je connais mon outil de prédilection: le développement. Cependant, ayant besoin d'être constamment stimulé, je n'ai pas encore trouvé l'univers dans lequel je pourrais investir tout mon potentiel. Est si c'était le vôtre ?"
+msgstr "After years of searching, I know my tool of choice: development. However, needing constant stimulation, I have not yet found the universe in which I could invest all my potential. Could it be yours ?"
+
+#: src/app/about/sectionList.tsx:37
+msgid "Que ce soit dans mes passions, tel que le modélisme, les jeux de rôle, l'écriture, ou dans le travail, je met un point d'honneur sur la qualité. Je passe mon temps à améliorer, peaufiner, à essayer d'avoir la meilleure version possible, à mon sens, de mes créations. J'apprécie les critiques constructives, et n'hésite pas à en faire de même."
+msgstr "Whether in my hobbies such as modeling, role-playing games, writing, or in my work, I place great importance on quality. I spend my time improving, refining, striving to achieve the best possible version, in my opinion, of my creations. I appreciate constructive criticism and do not hesitate to do the same."
+
+#: src/app/about/sectionList.tsx:62
+msgid "En recherche éternelle"
+msgstr "An eternal research"

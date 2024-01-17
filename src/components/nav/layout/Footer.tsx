@@ -2,6 +2,7 @@ import { Box, Icon, Link, Text } from '@chakra-ui/react';
 
 import { FaGithub } from 'react-icons/fa';
 import React from 'react';
+import { Trans } from '@lingui/macro';
 
 const Footer: React.FC = () => {
   return (
@@ -17,7 +18,7 @@ const Footer: React.FC = () => {
       zIndex="1"
     >
       <Text color="white">
-        Contactez moi à{' '}
+        <Trans>Contactez moi à</Trans>{' '}
         <Link color="teal.300" href="mailto:romanellibenjamin66@gmail.com">
           romanellibenjamin66@gmail.com
         </Link>

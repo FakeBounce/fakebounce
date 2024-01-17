@@ -1,6 +1,6 @@
 import { createSelector, createSlice } from '@reduxjs/toolkit';
 
-import { RootState } from '../../app/store';
+import { RootState } from '../../utils/store';
 
 interface INavigationState {
   expanded: boolean;

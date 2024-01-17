@@ -3,6 +3,7 @@ import { contentWidth, useIsMobile } from '../../../const';
 
 import { Flex } from '@chakra-ui/react';
 import Footer from './Footer';
+import LanguageSelector from './LanguageSelector';
 import NavigationArrow from './NavigationArrow';
 import { Outlet } from 'react-router-dom';
 import Sidebar from './Sidebar';
@@ -37,6 +38,7 @@ const Layout: React.FC<{ withSidebar: boolean }> = ({ withSidebar }) => {
           flex="1"
         >
           {!isMobile && <ThemeChanger />}
+          <LanguageSelector />
           {!isMobile && <NavigationArrow isExpanded={isExpanded} />}
           <Outlet />
         </Flex>

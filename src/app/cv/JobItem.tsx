@@ -1,14 +1,15 @@
 import { Flex, Image, Text } from '@chakra-ui/react';
 
+import { IJobItem } from './JobList';
 import React from 'react';
 
-const JobItem: React.FC<{
-  jobImage: string;
-  jobCompany: string;
-  jobDate: string;
-  jobTitle: string;
-  jobDescription: string;
-}> = ({ jobImage, jobCompany, jobDate, jobTitle, jobDescription }) => {
+const JobItem: React.FC<IJobItem> = ({
+  jobImage,
+  jobCompany,
+  jobDate,
+  jobTitle,
+  jobDescription
+}) => {
   return (
     <Flex
       data-testid={`job-item-${jobCompany}`}
@@ -28,11 +29,13 @@ const JobItem: React.FC<{
       />
       <Flex flexDirection={{ base: 'column', md: 'row' }} ml={{ base: 0, md: 4 }} width="100%">
         <Flex flexDirection="column" minW="7rem">
-          <Text fontWeight="bold">{jobCompany}</Text>
+          <Text fontWeight="bold" mb="0">
+            {jobCompany}
+          </Text>
           <Text fontSize={['small', 'x-small']}>{jobDate}</Text>
         </Flex>
         <Flex flexDirection="column" ml={{ base: 0, md: 4 }} mt={{ base: 2, md: 0 }} w="100%">
-          <Text fontSize={['md', 'small']} fontWeight="bold">
+          <Text fontSize={['md', 'small']} fontWeight="bold" mb="0">
             {jobTitle}
           </Text>
           <Text fontSize={['md', 'small']}>{jobDescription}</Text>

@@ -16,17 +16,17 @@ describe('NavigationLinksList', () => {
     expect(accueilLink).toBeInTheDocument();
     expect(accueilLink).toHaveTextContent('Accueil');
 
-    // Check if the "Mon CV" navigation link is rendered
-    const cvLink = screen.getByText('Mon CV');
+    // Check if the "CV" navigation link is rendered
+    const cvLink = screen.getByText('CV');
     expect(cvLink).toBeInTheDocument();
-    expect(cvLink).toHaveTextContent('Mon CV');
+    expect(cvLink).toHaveTextContent('CV');
 
     // Check if the "A propos" navigation link is rendered
     const aboutLink = screen.getByText('A propos');
     expect(aboutLink).toBeInTheDocument();
     expect(aboutLink).toHaveTextContent('A propos');
 
-    // Check if the "Mon CV" navigation link is rendered
+    // Check if the "CV" navigation link is rendered
     const autreLink = screen.getByText('Autre');
     expect(autreLink).toBeInTheDocument();
     expect(autreLink).toHaveTextContent('Autre');

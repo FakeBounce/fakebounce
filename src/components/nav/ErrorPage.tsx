@@ -1,10 +1,8 @@
 import { Button, Flex, Text } from '@chakra-ui/react';
 
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import { useNavigate } from 'react-router-dom';
-
-const errorText = "La page que vous essayez de voir n'existe pas :(";
-const returnText = "Retourner à l'accueil";
 
 const ErrorPage: React.FC = () => {
   const navigate = useNavigate();
@@ -16,13 +14,13 @@ const ErrorPage: React.FC = () => {
   return (
     <Flex justifyContent="center" alignItems="center" height="100vh" flexDirection="column">
       <Text fontSize="2xl" fontWeight="bold" mb="4">
-        Oops! Une erreur est survenue.
+        <Trans>Oops! Une erreur est survenue.</Trans>
       </Text>
       <Text fontSize="lg" mb="4">
-        {errorText}
+        <Trans>La page que vous essayez de voir n&apos;existe pas :(</Trans>
       </Text>
       <Button colorScheme="teal" onClick={handleGoBack}>
-        {returnText}
+        <Trans>Retourner à l&apos;accueil</Trans>
       </Button>
     </Flex>
   );

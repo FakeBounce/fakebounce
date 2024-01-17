@@ -8,7 +8,7 @@ const ThemeChanger: React.FC = () => {
   const isLightMode = colorMode === 'light';
 
   return (
-    <Button onClick={toggleColorMode} position="fixed" top="1rem" right="3rem">
+    <Button onClick={toggleColorMode} position="fixed" top="1rem" right="4">
       {isLightMode ? <SunIcon /> : <MoonIcon />}
     </Button>
   );

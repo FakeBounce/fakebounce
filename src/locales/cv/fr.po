@@ -1,0 +1,137 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2024-01-16 20:46+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: fr\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/app/cv/JobList.tsx:62
+msgid "Développement d’applications à destination des clients de Paprec, ces dernières doivent permettre la commande et le suivi des prestations proposées par le groupe"
+msgstr "Développement d’applications à destination des clients de Paprec, ces dernières doivent permettre la commande et le suivi des prestations proposées par le groupe"
+
+#: src/app/cv/JobList.tsx:26
+msgid "Création d’une nouvelle application web interne/B2B regroupant les différents outils existants et en améliorant l'interface graphique"
+msgstr "Création d’une nouvelle application web interne/B2B regroupant les différents outils existants et en améliorant l'interface graphique"
+
+#: src/app/cv/JobList.tsx:74
+msgid "Intervention sur le projet Tirelire Connectée Monimalz"
+msgstr "Intervention sur le projet Tirelire Connectée Monimalz"
+
+#: src/app/cv/EducationSection.tsx:39
+msgid "Compréhension des technologies du web et algorythmie"
+msgstr "Compréhension des technologies du web et algorythmie"
+
+#: src/app/cv/JobList.tsx:46
+msgid "Nov 2019 - Nov 2020"
+msgstr "Nov 2019 - Nov 2020"
+
+#: src/app/cv/JobList.tsx:93
+msgid "Fév 2015 - Juillet 2016"
+msgstr "Fév 2015 - Juillet 2016"
+
+#: src/app/cv/LanguageSection.tsx:32
+msgid "Français"
+msgstr "Français"
+
+#: src/app/cv/JobList.tsx:72
+msgid "Oct 2017 - Nov 2018"
+msgstr "Oct 2017 - Nov 2018"
+
+#: src/app/cv/JobList.tsx:60
+msgid "Dévellopeur Full stack"
+msgstr "Dévellopeur Full stack"
+
+#: src/app/cv/CVTitle.tsx:13
+msgid "Curriculum Vitae"
+msgstr "Curriculum Vitae"
+
+#: src/app/cv/JobList.tsx:81
+#: src/app/cv/JobList.tsx:94
+msgid "Dévellopeur PHP Fullstack"
+msgstr "Dévellopeur PHP Fullstack"
+
+#: src/app/cv/LanguageSection.tsx:66
+msgid "Courant"
+msgstr "Courant"
+
+#: src/app/cv/JobList.tsx:96
+msgid "Développement et maintenance de sites web vitrine et back-office pour des clients divers"
+msgstr "Développement et maintenance de sites web vitrine et back-office pour des clients divers"
+
+#: src/app/cv/LanguageSection.tsx:12
+msgid "Langues"
+msgstr "Langues"
+
+#: src/app/cv/JobList.tsx:23
+msgid "Fév 2022 - Mars 2023"
+msgstr "Fév 2022 - Mars 2023"
+
+#: src/app/cv/JobList.tsx:38
+msgid "Développement d’un site de vente en ligne responsive optimisé pour un client final"
+msgstr "Développement d’un site de vente en ligne responsive optimisé pour un client final"
+
+#: src/app/cv/JobList.tsx:49
+msgid "Mise en place d’applications web, native, et évolution de petits projets dont l’objectif principal est d’offrir une aide quotidienne à différents pôles Chanel"
+msgstr "Mise en place d’applications web, native, et évolution de petits projets dont l’objectif principal est d’offrir une aide quotidienne à différents pôles Chanel"
+
+#: src/app/cv/LanguageSection.tsx:60
+msgid "Anglais"
+msgstr "Anglais"
+
+#: src/app/cv/JobList.tsx:24
+#: src/app/cv/JobList.tsx:36
+#: src/app/cv/JobList.tsx:47
+msgid "Dévellopeur Front-end"
+msgstr "Dévellopeur Front-end"
+
+#: src/app/cv/JobList.tsx:59
+msgid "Fév 2018 - Oct 2019"
+msgstr "Fév 2018 - Oct 2019"
+
+#: src/app/cv/JobList.ts:64
+#~ msgid "Reprise et développement d’une application de gestion de devis, support applicatif et TMA de l'intranet"
+#~ msgstr "Reprise et développement d’une application de gestion de devis, support applicatif et TMA de l'intranet"
+
+#: src/app/cv/JobList.tsx:73
+msgid "Dévellopeur Fullstack"
+msgstr "Dévellopeur Fullstack"
+
+#: src/app/cv/LanguageSection.tsx:38
+msgid "Maternelle"
+msgstr "Maternelle"
+
+#: src/app/cv/JobSection.tsx:12
+msgid "Expériences en tant que développeur"
+msgstr "Expériences en tant que développeur"
+
+#: src/app/cv/EducationSection.tsx:36
+msgid "Master ESGI Ingénierie du Web en Alternance"
+msgstr "Master ESGI Ingénierie du Web en Alternance"
+
+#: src/app/cv/JobList.tsx:35
+msgid "Nov 2021 - Fév 2022"
+msgstr "Nov 2021 - Fév 2022"
+
+#: src/app/cv/EducationSection.tsx:11
+msgid "Formation"
+msgstr "Formation"
+
+#: src/app/cv/JobList.tsx:80
+msgid "Oct 2016 - Sept 2017"
+msgstr "Oct 2016 - Sept 2017"
+
+#: src/app/cv/JobList.tsx:83
+msgid "Reprise et développement d’une application de gestion de devis, support applicatif et TMA de l’intranet"
+msgstr "Reprise et développement d’une application de gestion de devis, support applicatif et TMA de l’intranet"
+
+#: src/app/cv/JobList.ts:74
+#~ msgid "Développement et maintenance de sites web vitrine & back-office pour des clients divers"
+#~ msgstr "Développement et maintenance de sites web vitrine & back-office pour des clients divers"

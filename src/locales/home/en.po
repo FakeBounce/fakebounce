@@ -1,0 +1,50 @@
+msgid ""
+msgstr ""
+"POT-Creation-Date: 2024-01-16 20:46+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: @lingui/cli\n"
+"Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
+
+#: src/app/home/Greeting.tsx:15
+msgid "Bonjour,"
+msgstr "Welcome,"
+
+#: src/app/home/Greeting.tsx:30
+msgid "Je suis un ingénieur du web, spécialisé en Front-end dans des applications ReactJs / NodeJs."
+msgstr "I am a web engineer, specializing in Front-end development with ReactJs/NodeJs applications."
+
+#: src/app/home/HomeContentBoxes.tsx:17
+msgid "Pour mon parcours de vie professionnel c'est ici !"
+msgstr "For my professionnal life journey, it's here!"
+
+#: src/app/home/HomeContentBoxes.tsx:44
+msgid "Pour les rôlistes aguerris ou débutants, c'est par là !"
+msgstr "For seasoned role-players or beginners, it's this way !"
+
+#: src/app/home/HomeContentBoxes.tsx:16
+msgid "Mon expérience ?"
+msgstr "My experience ?"
+
+#: src/app/home/HomeContentBoxes.tsx:27
+msgid "Pour en apprendre plus sur moi et mes passions !"
+msgstr "To learn more about me and my passions!"
+
+#: src/app/home/Greeting.tsx:17
+msgid "je m'appelle"
+msgstr "my name is"
+
+#: src/app/home/HomeContentBoxes.tsx:26
+msgid "Me découvrir ?"
+msgstr "Discovering me ?"
+
+#: src/app/home/HomeContentBoxes.tsx:43
+msgid "Autre ?"
+msgstr "Other ?"

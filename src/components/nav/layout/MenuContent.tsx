@@ -40,7 +40,7 @@ const MenuContent: React.FC<MenuContentProps> = ({ expanded, setExpanded }) => {
             fontSize={expanded ? fontSize : '0'}
             transition="font-size 0.3s ease"
           >
-            Fakebounce
+            Benjamin R
           </Text>
         </Flex>
 

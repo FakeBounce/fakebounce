@@ -4,8 +4,8 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export interface PageDescriptionBoxProps {
-  title: string;
-  text: string;
+  title: React.ReactNode;
+  text: React.ReactNode;
   navigationUrl: string;
   image?: string;
 }

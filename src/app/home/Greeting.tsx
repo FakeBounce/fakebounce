@@ -1,9 +1,8 @@
 import { Flex, Image, Text, useColorMode } from '@chakra-ui/react';
 
 import React from 'react';
+import { Trans } from '@lingui/macro';
 import devImage from '../../assets/images/dev.png';
-
-const myNameIs = "je m'appelle ";
 
 const Greeting: React.FC = () => {
   const { colorMode } = useColorMode();
@@ -13,9 +12,9 @@ const Greeting: React.FC = () => {
     <Flex flexDirection="row" alignItems="center" mb="2">
       <Flex flexDirection="column" mb="2">
         <Text fontSize="3xl" fontWeight="bold" mr="4">
-          Bonjour,
+          <Trans>Bonjour,</Trans>
           <br />
-          {myNameIs}
+          <Trans>je m&apos;appelle</Trans>{' '}
           <Text
             as="span"
             color={isLightMode ? 'green.600' : 'green.300'}
@@ -28,8 +27,10 @@ const Greeting: React.FC = () => {
 
         {/* Description */}
         <Text fontSize="xl" mb="4" color={isLightMode ? 'gray.600' : 'gray.300'}>
-          Je suis un ingénieur du web, spécialisé en Front-end dans des applications ReactJs /
-          NodeJs.
+          <Trans>
+            Je suis un ingénieur du web, spécialisé en Front-end dans des applications ReactJs /
+            NodeJs.
+          </Trans>
         </Text>
       </Flex>
       <Image
